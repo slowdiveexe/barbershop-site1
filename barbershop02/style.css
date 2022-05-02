@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@100;200;300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+    overscroll-behavior: none;
+    overflow: scroll
+  }
+  
+  a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: gold;
+    opacity: 0.5;
+    
+  }
+
+  
+  /* ===================== Navbar======================== */
+nav{
+    height: 10vh;
+    width: 100%;
+    background: #030201;
+    position: relative;
+  }
+
+  .logo-flex-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+  }
+  .logo-span{
+    font-family: arial;
+    font-size: 1rem;
+    letter-spacing: 1px;;
+  }
+  .nav-links{
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .nav-links a:hover{
+    color: gold;
+    border-bottom: 1px  solid;
+    cursor: pointer;
+  }
+
+  .top-section_img{
+    width: 100%;
+    object-fit: cover; 
+    background: url("banner.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+
+  }
+  .cover, .flex-cover-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    color: gold;
+    background: #0d0908db;
+    width: 30%;
+    max-width: 250px;
+    height: 10%;
+    border: 1px solid white;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 30%;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+  }
+  .btn:hover {
+    color: black;
+    background: white;
+    width: 30%;
+    height: 10%;
+    border: 1px solid #000;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 30%;
+  }  
+  .info-section{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    background: #030201;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    
+    
+  }
+  .info-text h3 {
+    font-family: 'Lobster', cursive;
+
+  }
+
+  .info-text{
+    width: 50%;
+    min-height: 350px;
+    color: gold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+  }
+  .title{
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+  }
+  .separator{
+    height: 1px;
+    background: gold;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 55px;
+}
+.text-wrapper{
+  margin: 0 auto;
+  width: 80%;
+}
+.about{
+  color: #fff;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  
+}
+.visual-menu{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.option{
+  width: 50%;
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.option_img {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(0.7);
+  filter: grayscale(0.7);
+  opacity: 0.4;
+  object-fit: cover;
+  transition: all 0.3s ease-out;
+}
+.photo:hover{
+  opacity: 0.2;
+	transform: scale(1.15);
+}
+
+/* ====================== */
+
+/* 
+===================== our team================ */
+.section-title{
+  width: 100%;
+  color: gold;
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px;
+}
+.our-team-section{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #030201;
+}
+.person {
+  width: 50%;
+  display: flex;
+  color: #030201;
+  overflow: hidden;
+ 
+}
+.person:nth-child(4), .person:nth-child(5){
+  flex-direction: row-reverse;
+}
+.person-photo{
+  width: 50%;
+  opacity: 0.75;
+  object-fit: cover;
+  height: 100%;
+}
+.about-person{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.name{
+  font-size: 1.4rem;
+  padding-bottom: 20px;
+}
+.about-person-text{
+  width: 80%;
+  font-size: 0.8rem;
+}
+
+/* =============== Gallery================================== */
+
+.section-gallery{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+.gallery-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.gallery_img{
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-out;
+  opacity: 0.7;
+  object-fit: cover;
+  cursor: pointer;
+}
+.galleryPhotoHover{
+  opacity: 1;
+	transform: scale(1.15);
+}
+.gallery_img_block{
+  width: 25%;
+  overflow: hidden;
+  border: 5px solid transparent;
+}
+.see-more-btn{
+  margin-top: 40px;
+  width: 40%;
+  max-width: 160px;
+  background: #000;
+  height: 40px;
+  border: 1px solid grey;
+  text-align: center;
+  color: #000;
+}
